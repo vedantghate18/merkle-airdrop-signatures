@@ -62,7 +62,7 @@ foundryup
 Clone the repository and install the necessary dependencies (like OpenZeppelin and Murky):
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/vedantghate18/merkle-airdrop-signatures
 cd merkle-airdrop
 forge install
 ```
