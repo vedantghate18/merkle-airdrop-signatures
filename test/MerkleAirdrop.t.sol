@@ -10,16 +10,13 @@ contract MerkleAirdropTest is ZkSyncChainChecker, Test {
     MerkleAirdrop public airdrop;
     RayToken public token;
     // TEST MERKLE ROOT
-    bytes32 public ROOT =
-        0x7cdb6c21ef22a6cb5726d348e677f3e10032127425d425c5028965a30a71556e;
+    bytes32 public ROOT = 0x7cdb6c21ef22a6cb5726d348e677f3e10032127425d425c5028965a30a71556e;
     uint256 public AMOUNT_TO_CLAIM = 25 * 1e18;
     uint256 public AMOUNT_TO_SEND = 4 * AMOUNT_TO_CLAIM;
-    
+
     // TEST PROOFS
-    bytes32 proofOne =
-        0x0fd7c981d39bece61f7499702bf59b3114a90e66b51ba2c53abdf7b62986c00a;
-    bytes32 proofTwo =
-        0xe5ebd1e1b5a5478a944ecab36a9a954ac3b6b8216875f6524caa7a1d87096576;
+    bytes32 proofOne = 0x0fd7c981d39bece61f7499702bf59b3114a90e66b51ba2c53abdf7b62986c00a;
+    bytes32 proofTwo = 0xe5ebd1e1b5a5478a944ecab36a9a954ac3b6b8216875f6524caa7a1d87096576;
     bytes32[] public PROOF = [proofOne, proofTwo];
     address gasPayer;
     address USER;
